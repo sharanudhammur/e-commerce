@@ -120,6 +120,7 @@ function Hero() {
                 </div>
                 <div>
                     <img style={{ width: '100%', margin: 'auto' }} src={heross} alt="" />
+                    <img style={{ width: '100%', margin: 'auto' }} src={heross} alt="" />
                 </div>
             </div> */}
             {/* <img style={{ width: '100%', margin: 'auto' }} src={heross} alt="" /> */}
