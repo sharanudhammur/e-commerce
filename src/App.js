@@ -5,10 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Login from './Screens/Login/Login';
-import Hero from './Screens/Hero/Hero';
+import Hero from './Screens/Home/Home';
 import Layout from './Screens/Layout/Layout';
 import Products from './Screens/Products/Products';
 import ProductDetail from './Screens/ProductDetail/ProductDetail';
+import { ChakraProvider } from '@chakra-ui/react'
+import CheckOut from './Screens/CheckOut/CheckOut';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
         path: "products-detail",
         element: <ProductDetail />
       },
+      {
+        path: "checkout",
+        element: <CheckOut />
+      },
     ]
   },
 ]);
@@ -43,11 +49,15 @@ const router = createBrowserRouter([
 function App() {
 
   const dispatch = useDispatch()
-  const selector = useSelector((state) => console.log(state))
+  const todoList = useSelector((state) => state.todoSlice)
+
+  console.log(todoList)
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <ChakraProvider>
+        <RouterProvider router={router} />
+      </ChakraProvider>
     </div>
   );
 }

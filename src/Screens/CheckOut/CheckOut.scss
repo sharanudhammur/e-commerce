@@ -1,0 +1,124 @@
+.CheckOut_screen {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 95px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .item_list {
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        // padding: 10px;
+        gap: 10px;
+
+        .each_item {
+            display: flex;
+            gap: 20px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 7px;
+
+            img {
+                width: 110px;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 4px
+            }
+
+            .product_detail {
+
+                .product_name {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                .desc {}
+
+                .price {
+                    display: flex;
+                    gap: 10px;
+
+                    .offer_price {
+                        font-weight: 500;
+                    }
+
+                    .og_price {
+                        text-decoration: line-through;
+                        color: gray;
+                    }
+
+                    .discount {
+                        color: #26a51f;
+                    }
+                }
+                .add-items{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-top: 15px;
+                    svg{
+                        width: 22px;
+                        height: 22px;
+                        color: rgb(116, 114, 114);
+                    }
+                }
+            }
+        }
+    }
+
+    .price_detail {
+        // width: 25%;
+        border: 1px solid lightgray;
+        padding: 15px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 5px;
+
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .price-dd{
+            // padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .each{
+                display: flex;
+                justify-content: space-between;
+                .strike{
+                    text-decoration: line-through;
+                    margin-right: 6px;
+                }
+                .green{
+                    color: #26a51f;
+                }
+            }
+        }
+
+        .total{
+            display: flex;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            // letter-spacing: 1px;
+            .total-price{
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .place_order{
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
