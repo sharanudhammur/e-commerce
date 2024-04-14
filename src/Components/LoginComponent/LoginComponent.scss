@@ -1,0 +1,44 @@
+.login_component {
+    label {
+        text-align: start;
+    }
+
+    input {
+        border: 1px solid #c0c0c0;
+    }
+
+    .error-message {
+        background-color: #fedce0;
+        border: 1px solid red;
+        border-radius: 2px;
+        padding: 7px 12px;
+        color: #841a21;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .message_close_icon{
+            width: 23px;
+            height: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                background-color: #f8bdc4;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    .message {
+        color: red;
+        margin-top: 2px;
+    }
+
+    .action-button {
+        border-radius: 0px;
+        background-color: rgb(31, 41, 55);
+        border-radius: 2px;
+        padding: 22px;
+    }
+}

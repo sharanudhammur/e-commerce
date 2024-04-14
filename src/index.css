@@ -8,7 +8,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  /* font-family: 400 16px "Josefin Sans", sans-serif !important; */
+  /* font-family: ultra; */
+  /* font-family: "PT Sans", sans-serif; */
+  /* font-family: "Hind Siliguri", sans-serif !important; */
+  font-family: Roboto,Arial,sans-serif !important;
 }
+
+/* @font-face{
+  font-family: ultra;
+  src: url(../public//Nunito-VariableFont_wght.ttf);
+}
+.ultra{
+  font-family: ultra;
+} */
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
